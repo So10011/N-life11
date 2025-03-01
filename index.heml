@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nsite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html"><img src="img/無題29_20240927153600.PNG"></a>
+    <ul class="gnavi">
+      <li class="current"><a href="index.html">Top</a></li>
+      <li><a href="News.html">News</a></li>
+      <li><a href="Calendar.html">Calendar</a></li>
+      <li><a href="Point.html">coNect</a></li>
+      <li><a href="Link.html">Link</a></li>
+  </ul>
+  </header>
+
+  <div class="bg-transparent"></div>
+  <div class="top" id="top">
+    <div class="cp" id="cp">
+      <img src="img/スクリーンショット_2024-11-20_14.29.26-removebg-preview.png" width="666">
+    </div>
+    <img src="img/無題29_20241120143854.PNG" width="600" height="600">
+  </div>
+
+</body>
+</html>
