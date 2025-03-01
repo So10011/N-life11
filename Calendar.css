@@ -1,0 +1,127 @@
+body{
+  margin: 0%;
+}
+
+/*=====ヘッダー=====*/
+header{
+  background-color: #0099D9;
+  display: flex;
+  justify-content: space-between;
+  padding: 27px;
+}
+/*余白*/
+header ul{
+  margin: 0;
+}
+/*テキストスペース・位置*/
+header ul li{
+  display: inline-block;
+  padding: 0 20px;
+  padding-top: 6px;
+}
+/*テキスト*/
+header ul li a{
+  color: #FFFFFF;
+  font-size: 22px;
+  text-decoration:none ;
+}
+/*画像*/
+header img{
+  height: 30px;
+  padding-top: 5px;
+}
+
+/*===テキストアニメーション===*/
+.gnavi li a{
+position: relative;
+}
+/*文字の色*/
+.gnavi li.current a,
+.gnavi li a:hover{
+color:#afe7f6;
+}
+/*線の設定*/
+.gnavi li a::after {
+  content: '';
+  /*線の位置*/
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: 2px;
+  background:#afe7f6;
+  /*アニメーション*/
+  transition: all .3s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+/*現在地とhover*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+  transform: scale(1, 1);
+}
+
+/*=====画像位置=====*/
+.flex{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.center{
+  justify-content: center;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.space-around{
+  justify-content: space-around;
+  margin-inline: 2%;
+  margin: 0.3em;;
+}
+
+.space-around2{
+  justify-content: space-around;
+  margin-inline: 2%;
+  margin:0.3em;
+}
+
+div{
+  text-align: center;
+}
+
+.newevent{
+  color: #0099D9;
+  padding-right: 80%;
+}
+
+.osusume{
+  color:#0099D9;
+  padding-right: 78%;
+}
+
+.text-form{
+ color: #0099D9;
+ padding-left: 60%;
+ margin: 0;
+}
+
+.form{
+ height: 0px;
+}
+
+.arrow{
+ margin: 0;
+ height:1px;
+ padding-left: 92%;
+}
+
+/*=====月日=====*/
+span{
+  padding-top: 50%;
+  padding-left: 43%;
+  color: #0099D9;
+  font-size: 30px;
+}
