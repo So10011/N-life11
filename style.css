@@ -1,0 +1,95 @@
+body{
+  margin: 0%;
+}
+
+/*=====ヘッダー=====*/
+header{
+  background-color: #0099D9;
+  display: flex;
+  justify-content: space-between;
+  padding: 27px;
+}
+/*余白*/
+header ul{
+  margin: 0;
+}
+/*テキストスペース・位置*/
+header ul li{
+  display: inline-block;
+  padding: 0 20px;
+  padding-top: 6px;
+}
+/*テキスト*/
+header ul li a{
+  color: #FFFFFF;
+  font-size: 22px;
+  text-decoration:none ;
+}
+/*画像*/
+header img{
+  height: 30px;
+  padding-top: 5px;
+}
+
+/*===テキストアニメーション===*/
+.gnavi li a{
+position: relative;
+}
+/*文字の色*/
+.gnavi li.current a,
+.gnavi li a:hover{
+color:#afe7f6;
+}
+/*線の設定*/
+.gnavi li a::after {
+  content: '';
+  /*線の位置*/
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: 2px;
+  background:#afe7f6;
+  /*アニメーション*/
+  transition: all .3s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+/*現在地とhover*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+  transform: scale(1, 1);
+}
+
+.bg-transparent {
+  position: relative;
+  padding: 368px 0;
+}
+.bg-transparent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/IMG_4939.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+/*=====Nlifeロゴ位置=====*/
+.top img{
+  position: absolute;
+  top:40%;
+  left:30%;
+  transform: translate(-45%,-30%);
+}
+
+/*=====キャンパス目標の位置=====*/
+.cp img{border-bottom:8px double #FFFFFF;
+  top: 55%;
+  left: 75%;
+}
